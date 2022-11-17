@@ -1,0 +1,447 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0px 0px 30px;
+}
+
+.navLogo {
+    height: 19px;
+}
+
+.navbTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navTitle a {
+    margin-right: 70px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbTitle a:hover {
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+    padding-top: 48px;
+}
+
+/* Top page */
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0px 25px 30px;
+}
+
+.hero .heroTitle {
+    font-weight: 700;
+    /* font-size: 22px; */
+}
+
+/* searchbar */
+.search-bar {
+    display: flex;
+}
+
+.search-bar .fa-location-dot {
+    background-color: #F2F2F2;
+    width: 14px;
+    padding: 13px 16px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input {
+    font-weight: 700;
+    border: solid 1px #F2F2F2;
+    border-right: 0px;
+    padding: 5px;
+    margin-left: 0px;
+}
+
+.search-bar span {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #0065FC;
+    padding: 6px 8px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* filtres */
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.filters-title {
+    font-weight: 700;
+}
+
+.filter-text {
+    font-weight: 700;
+}
+
+.filter-container {
+    border: solid 2px #F2F2F2;
+    border-radius: 20px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.filter-container:hover {
+    background-color: #DEEBFF;
+}
+
+.icon-filter {
+    color: #0065FC;
+    margin: 0px 5px;
+}
+
+/* infos */
+
+.infos {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.infos .fa-info {
+    padding: 5px 10px;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+    color: #0065FC;
+}
+
+.infos p {
+    padding-left: 10px;
+}
+
+/* main page - hosting */
+
+.hosting-container {
+    display: flex;
+    margin: 0px 30px 30px 30px;
+}
+
+.hosting {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.hosting-title {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+
+.hosting-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 250px;
+    margin: 10px 15px;
+    border-radius: 20px;
+    box-shadow: #DCDCDC 0px 7px 29px 0px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hosting-section:hover {
+    transform: scale(1.03);
+}
+
+.hosting-img {
+    border: 4px solid white;
+    border-radius: 20px 20px 0 0;
+    height: 124px;
+    object-fit: cover;
+}
+
+.hostingText {
+    font-weight: 700;
+    padding: 6px 0px 6px 13px;
+}
+
+.hostingSubText {
+    padding: 0px 0px 6px 13px;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 11px 13px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.grey-star {
+    color: #F2F2F2;
+}
+
+.show {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 40px 0px 0px 0px;
+}
+
+/* aside - popular */
+
+.popular-container {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 25px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.popular-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.fa-chart-line {
+    color: #0065FC;
+}
+
+.popular-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.popular-section {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 343px;
+    margin: 10px 15px;
+    box-shadow: #DCDCDC 0px 7px 29px 0px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.popular-section:hover {
+    transform: scale(1.03);
+}
+
+.popularImg {
+    border: 4px solid white;
+    border-radius: 20px 0px 0px 20px;
+    height: 144px;
+    width: 137px;
+    object-fit: cover;
+}
+
+.popular-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+}
+
+.popularText {
+    font-weight: 700;
+}
+
+.popularStars {
+    display: flex;
+    flex-direction: row;
+}
+
+/* End page - activités à Marseille */
+
+.activities-container {
+    padding-top: 50px;
+    margin: 0px 30px 30px 30px;
+}
+
+.activities-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    margin: 20px;
+}
+
+.activities-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    box-shadow: #DCDCDC 0px 7px 29px 0px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.activities-card:hover {
+    transform: scale(1.03);
+}
+
+.activitiesImg {
+    border-radius: 20px 20px 0 0;
+    height: 445px;
+    object-fit: cover;
+}
+
+.activitiesText {
+    padding: 20px;
+    font-weight: 700;
+}
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 0px;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 1000px) {
+    .hosting-container {
+        flex-direction: column;
+    }
+
+    .popular-cards {
+        flex-direction: row;
+    }
+
+    .popular-container {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .activities-container {
+        padding-top: 30px;
+    }
+
+    .activities-card {
+        height: 267px;
+        width: 182px;
+    }
+
+    .sizeImg {
+        height: 208px;
+    }
+}
+
+@media only screen and (max-width: 632px) {
+    nav {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navLogo {
+        margin: 20px 0px 30px 0px;
+    }
+
+    .navTitle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navTitle a {
+        font-size: 20px;
+        margin: 0px
+    }
+
+    .sizeBottom {
+        width: 100%;
+        border-bottom: 3px #f2f2f2 solid;
+        padding: 25px;
+
+    }
+
+    .navTitle a:hover {
+        border-bottom: solid 3px #0065FC;
+        color: #0065FC;
+    }
+
+    .hero .heroTitle {
+        font-size: 22px;
+    }
+
+    .hosting-container {
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+
+    .hosting {
+        background-color: white;
+        padding: 30px 0px 0px 24px;
+    }
+
+    .popular-container {
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+
+    .activities-container {
+        margin-left: 10px;
+    }
+
+    .activities-section {
+        gap: 20px;
+    }
+
+    .sizeCard {
+        width: 300px
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+}
